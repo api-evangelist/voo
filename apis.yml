@@ -1,7 +1,25 @@
 aid: voo
-name: VOO
-description: VOO is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/voo.png
+name: VOO (now SideUp)
+description: VOO was an Egyptian logistics marketplace that rebranded as SideUp in
+  December 2022, relocating its headquarters to Riyadh, Saudi Arabia. SideUp is a
+  fully integrated courier marketplace that lets e-commerce businesses ship locally
+  and globally from one dashboard, connecting merchants with multiple courier services
+  alongside payment gateways, shipping API integration, warehousing, and fulfillment,
+  with plugins for Shopify, Salla, and OpenCart. Backed by 500 Global, Launch Africa
+  VC, Riyadh Angels, and Alex Angels ($1.2M seed). No public developer portal or
+  API documentation is published as of July 2026.
 url: https://raw.githubusercontent.com/api-evangelist/voo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Logistics
+- Shipping
+- eCommerce
+- Delivery
+- Fulfillment
+- Couriers
+- Saudi Arabia
+- Egypt
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,24 @@ maintainers:
 common:
 - type: Website
   url: https://sa.sideup.co
+- type: DomainSecurity
+  url: security/voo-domain-security.yml
+- type: LLMsTxt
+  url: llms/voo-llms.txt
+- type: Blog
+  url: https://sa.sideup.co/blog/
+- type: Support
+  url: https://sa.sideup.co/contact-us/
+- type: SignUp
+  url: https://portal.sideup.co/register/getting-started
+- type: Login
+  url: https://portal.sideup.co/login
+- type: TermsOfService
+  url: https://sa.sideup.co/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://sa.sideup.co/privacy-policy-2/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

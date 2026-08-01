@@ -1,0 +1,29 @@
+# VOO (now SideUp)
+
+> VOO was an Egyptian logistics marketplace that rebranded as SideUp in December 2022, relocating its headquarters from Egypt to Riyadh, Saudi Arabia. SideUp is a fully integrated courier marketplace that lets e-commerce businesses ship locally and globally from one dashboard — connecting merchants with multiple courier services, plus payment gateways, shipping API integration, warehousing, and fulfillment. Backed by 500 Global, Launch Africa VC, Riyadh Angels, and Alex Angels ($1.2M seed, December 2022).
+
+SideUp publishes no public developer portal, API reference, or machine-readable API specs as of July 2026. Its "shipping API integration" is offered to merchants through its platform and e-commerce plugins (Shopify, Salla, OpenCart) rather than as an open API program.
+
+## Company
+
+- [SideUp (Saudi Arabia site)](https://sa.sideup.co): Main marketing site for the courier marketplace
+- [About Us](https://sa.sideup.co/about-us/): Company background
+- [Blog](https://sa.sideup.co/blog/): Company blog
+- [FAQ](https://sa.sideup.co/faq/): Frequently asked questions
+- [Contact](https://sa.sideup.co/contact-us/): Support and contact
+
+## Platform
+
+- [Sign Up](https://portal.sideup.co/register/getting-started): Merchant registration
+- [Login](https://portal.sideup.co/login): Merchant portal login
+- [Shipping Calculator](https://portal.saudi.sideup.co/shipping-calculator.html): Public rate calculator
+
+## Policies
+
+- [Terms and Conditions](https://sa.sideup.co/terms-and-conditions/)
+- [Privacy Policy](https://sa.sideup.co/privacy-policy-2/)
+
+## Optional
+
+- [TechCrunch: Egypt's SideUp raises $1.2M](https://techcrunch.com/2022/12/04/egypts-sideup-raises-1-2m-to-grow-its-e-commerce-support-platform/): Rebrand and funding coverage
+- [Wamda: SIDEUP raises $1.2 million Seed, relocating HQ to Riyadh](https://www.wamda.com/2022/12/sideup-raises-1-2-million-seed-relocating-hq-riyadh)

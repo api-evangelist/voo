@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of /.well-known/ on sideup.co hosts (VOO rebranded as SideUp)
+note: No genuine well-known documents found. portal.sideup.co returns HTTP 200 with
+  text/html for every path (SPA catch-all serving index.html), so those 200s are
+  false positives, not real discovery documents. sa.sideup.co dropped connections
+  (WAF) on repeated probes; sideup.co fronts a 403 and redirects to sa.sideup.co.
+hosts:
+- host: https://sa.sideup.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    note: connection dropped (WAF)
+  - path: /.well-known/openid-configuration
+    status: 0
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+  - path: /.well-known/api-catalog
+    status: 0
+  - path: /.well-known/ai-plugin.json
+    status: 0
+- host: https://sideup.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+- host: https://portal.sideup.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    false_positive: true
+    note: SPA catch-all; returns text/html index.html, not RFC 9116 security.txt
+  - path: /.well-known/openid-configuration
+    status: 200
+    false_positive: true
+    note: SPA catch-all; returns text/html index.html, not OIDC discovery JSON
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    false_positive: true
+    note: SPA catch-all
+  - path: /.well-known/api-catalog
+    status: 200
+    false_positive: true
+    note: SPA catch-all
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    false_positive: true
+    note: SPA catch-all
